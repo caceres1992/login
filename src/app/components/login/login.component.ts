@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {HttpClient} from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 
 @Component({
   selector: 'app-login',
@@ -11,9 +11,11 @@ export class LoginComponent {
   Title: string = "Login";
   greetin: {};
 
-  constructor(private http: HttpClient) {
+  constructor(private http: HttpClient, private header: HttpHeaders) {
     http.get('resource').subscribe(data => this.greetin = data);
-   }
+  }
+
+
 
 
 
