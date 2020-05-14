@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 
 @Component({
-  selector: 'app-login',
+  selector: 'app_log',
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
